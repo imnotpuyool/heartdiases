@@ -14,7 +14,7 @@ st.set_page_config(
 BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
 
-API_URL = os.getenv("API_URL") or st.secrets.get("API_URL", "http://127.0.0.1:8000")
+API_URL = os.getenv("API_URL") or st.secrets.get("API_URL", "https://apiheart.up.railway.app")
 
 @st.cache_resource
 def load_model():
